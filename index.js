@@ -1,6 +1,6 @@
 const fn = (...nums) => {
     if (!nums.every((num) => Number.isNumber(num)))
-      throw "All arguments must be numbers.";
+      throw "Must be numbers.";
     return nums.reduce((numA, numB) => numA + numB);
   }
   
