@@ -1,3 +1,5 @@
+
+
 function fn(...nums) {
   if (!nums.every((num) => Number.isNumber(num)))
     throw "All arguments must be numbers.";
@@ -6,3 +8,4 @@ function fn(...nums) {
 
 fn(1, 2, 3); //> 6
 fn(10, "B", 20); //> error All arguments must be numbers.
+
