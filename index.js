@@ -1,7 +1,7 @@
-const fn = (...nums) => {
-    if (!nums.every((num) => Number.isNumber(num)))
-      throw "Must be numbers.";
-    return nums.reduce((numA, numB) => numA + numB);
+function fn(...c) {
+    if (!c.every((result) => Number.isNumber(result)))
+      throw "All arguments must be numbers.";
+    return c.reduce((result, b) => result + b);
   }
   
   fn(1, 2, 3); //> 6
