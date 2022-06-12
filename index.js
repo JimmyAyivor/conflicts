@@ -1,6 +1,6 @@
 function fn(...c) {
-    if (!c.every((result) => Number.isNumber(result)))
-      throw "All arguments must be numbers.";
+    if (!c.every((a) => Number.isNumber(a)))
+    throw "All arguments must be numbers.";
     return c.reduce((result, b) => result + b);
   }
   
