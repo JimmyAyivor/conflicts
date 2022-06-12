@@ -1,4 +1,4 @@
-function createPerson(name, age) {
+const createPerson = (name, age) => {
     return {
       name,
       age,
@@ -6,9 +6,9 @@ function createPerson(name, age) {
     };
   }
   
-  function addPersonAsFriend(person, other) {
-    person.friends.push(other);
-    return person;
+  const addPersonAsFriend = (personA, personB) => {
+    personA.friends.push(personB);
+    return personA;
   }
   
   module.exports = {
