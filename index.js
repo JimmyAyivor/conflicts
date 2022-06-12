@@ -1,4 +1,4 @@
-const createPerson = (name, age) => {
+function createPerson(name, age) {
     return {
       name,
       age,
@@ -6,7 +6,7 @@ const createPerson = (name, age) => {
     };
   }
   
-  const addPersonAsFriend = (personA, personB) => {
+  function addPersonAsFriend(personA, personB) {
     personA.friends.push(personB);
     return personA;
   }
