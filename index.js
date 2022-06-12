@@ -1,17 +1,8 @@
-function createPerson(name, age) {
-    return {
-      name,
-      age,
-      friends: [],
-    };
-  }
-  
-  function addPersonAsFriend(personA, personB) {
-    personA.friends.push(personB);
-    return personA;
-  }
-  
-  module.exports = {
-    createPerson,
-    addPersonAsFriend,
-  };
+function fn(...nums) {
+  if (!nums.every((num) => Number.isNumber(num)))
+    throw "All arguments must be numbers.";
+  return nums.reduce((numA, numB) => numA + numB);
+}
+
+fn(1, 2, 3); //> 6
+fn(10, "B", 20); //> error All arguments must be numbers.
