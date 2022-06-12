@@ -1,9 +1,9 @@
 
 
-function fn(...bananas) {
-  if (!bananas.every((banana) => Number.isNumber(banana)))
+function fn(...apples) {
+  if (!apples.every((apple) => Number.isNumber(apple)))
     throw "All arguments must be numbers.";
-  return bananas.reduce((numA, numB) => numA + numB);
+  return apples.reduce((numA, numB) => numA + numB);
 }
 
 fn(1, 2, 3); //> 6
