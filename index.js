@@ -1,7 +1,7 @@
 function fn(...c) {
     if (!c.every((a) => Number.isNumber(a)))
-      throw "All arguments must be numbers.";
-    return c.reduce((a, b) => a - b);
+    throw "All arguments must be numbers.";
+    return c.reduce((result, b) => result + b);
   }
   
   fn(1, 2, 3); //> 6
